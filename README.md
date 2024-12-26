@@ -80,3 +80,31 @@ Después de clonar el proyecto, abre la carpeta donde se encuentra. En la consol
 Alternativamente, puedes ejecutar el archivo `.bat` simplemente haciendo doble clic sobre él desde el explorador de archivos.
 El archivo `.bat` nos permite ahorrar tiempo al crear automáticamente un entorno virtual (`venv`) e instalar las dependencias que se encuentran en el archivo `requirements.txt`. Si lo ejecutas desde la consola de Visual Studio Code, también evitarás la necesidad de activar manualmente el entorno virtual, ya que esto se realizará de manera automática.
 
+## Parámetros Necesarios
+### 1. Parámetros de Configuración General
+Estos parámetros son necesarios para la inicialización y configuración del codigo, definidos en la tabla parameters en la base de datos:
+
+`mail_to`: Dirección de correo electrónico a la que se enviarán las notificaciones.
+Ejemplo: `example@gmail.com`
+
+`subject`: Asunto del correo enviado.
+Ejemplo: `"Cuenta de cobro comisiones"`
+
+`date_init`: Fecha de inicio del período a evaluar, en formato YYYYMMDDHHMMSS.
+Ejemplo: `20240701000000`
+
+`date_end`: Fecha de fin del período a evaluar, en formato YYYYMMDDHHMMSS.
+Ejemplo: `20240831235959`
+
+`trade_status`: Estado del comercio para filtrar datos relevantes (Active, Inactive, etc.).
+Ejemplo: `Active`
+
+`client_id`: Identificador único del cliente o sistema asociado.
+Ejemplo: `OluLkp5fenU2xbNHZBdKDy8mP6Mw4grQad`
+
+`tenant_id`: Identificador único del tenant (entidad separada dentro del sistema).
+Ejemplo: `OluLkp5fsdfU4xbNHZBdKDy8mP6MSd`
+
+`password`: Contraseña asociada a la autenticación del sistema.
+Ejemplo: `12345678`
+
