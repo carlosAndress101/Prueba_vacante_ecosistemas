@@ -1,0 +1,27 @@
+# Archivos y directorios del entorno virtual
+venv/
+.env/
+
+# Archivos de configuración específicos de tu editor (Ej. VSCode, PyCharm)
+.vscode/
+.idea/
+
+# Archivos de la base de datos (si es local, no se debe subir)
+db/database.sqlite
+
+# Archivos generados durante la ejecución
+*.pyc
+*.pyo
+__pycache__/
+
+# Archivos de logs
+*.log
+
+# Archivos de compilación y empaquetado
+*.egg-info/
+dist/
+build/
+
+# Archivos sensibles (como configuraciones locales de API, tokens, etc.)
+config.ini
+credentials.json
