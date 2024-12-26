@@ -1,4 +1,4 @@
 pandas
-openpyxl
+xlwings
 msal
 python-dotenv

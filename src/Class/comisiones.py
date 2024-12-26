@@ -1,5 +1,6 @@
 from Class.email import EmailSendOutlook
 from Class.data import DataLoader
+from utils.formato_result import formatear_resultados
 import pandas as pd
 import os
 
@@ -66,6 +67,7 @@ class Comisiones:
             
             file_path = f'{output_dir}/Calculo_de_Comisiones.xlsx'
             df_calculo_comisiones.to_excel(file_path, index=False)
+            formatear_resultados(file_path)
             return file_path
         except Exception as e:
             print(f"Error al guardar los resultados: {e}")
