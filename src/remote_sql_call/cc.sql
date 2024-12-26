@@ -24,19 +24,19 @@ WITH t1 AS (
         ON csc.commerce_name = d.trade_name
 )
 SELECT 
-    t1.formatted_date AS month_date,
-    t1.commerce_name AS name_trade,
-    t1.commerce_nit AS nit,
+    t1.formatted_date AS Fecha_Mes,
+    t1.commerce_name AS Nombre,
+    t1.commerce_nit AS Nit,
     (t1.commission_cost * t1.successful_count) * (
         1 - COALESCE(t1.discount_percentage, 0)
-    ) AS commission_cost,
+    ) AS Valor_comision,
     (t1.commission_cost * t1.successful_count) * (
         1 - COALESCE(t1.discount_percentage, 0)
-    ) * t1.percentage_vat AS vat_value,
+    ) * t1.percentage_vat AS Valor_iva,
     (t1.commission_cost * t1.successful_count) * (
         1 - COALESCE(t1.discount_percentage, 0)
-    ) * (1 + t1.percentage_vat) AS total_value,
-    t1.commerce_email AS email
+    ) * (1 + t1.percentage_vat) AS Valor_Total,
+    t1.commerce_email AS Correo
 FROM t1
 WHERE (
         t1.discount_percentage IS NULL
