@@ -65,6 +65,8 @@ La clase EmailSendOutlook se encarga de:
 
 1. Autenticar el usuario en Outlook mediante OAuth2.
 2. Enviar correos electrónicos con los resultados de las comisiones y el archivo Excel adjunto.
+## Descripción de la clase formatear_resultados
+1. nos permite darle estilos a nuestra tabla con xlwings entregando un resultado claro y facil de entender.
 
 ## Instalación y Uso
 ### 1. Clonar el repositorio:
